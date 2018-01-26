@@ -1,8 +1,8 @@
 version: 2
-  jobs:
-    build:
-      docker:
-        - image: circleci/node
-      steps:
-        - run: echo "Standard root:" $(id)
-        - run: sudo echo "Sudo root:" $(sudo id)
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - run: echo "Standard root:" $(id)
+      - run: sudo echo "Sudo root:" $(sudo id)
