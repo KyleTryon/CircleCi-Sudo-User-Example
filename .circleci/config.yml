@@ -3,6 +3,6 @@ version: 2
     build:
       docker:
         - image: circleci/node
-        steps:
-          - run: echo "Standard root:" $(id)
-          - run: sudo echo "Sudo root:" $(sudo id)
+      steps:
+        - run: echo "Standard root:" $(id)
+        - run: sudo echo "Sudo root:" $(sudo id)
